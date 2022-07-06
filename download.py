@@ -21,7 +21,7 @@ def get_download_info(source='README.md'):
     
     paths = [path.text for  path in f_soup.find_all('h2')]
     contents = f_soup.find_all('ul')
-    contents = [{clean_title(k.text.strip(' [pdf]')):v.attrs['href']for k in content.find_all('li') for v in content.find_all('a') } for content in contents]
+    contents = [{clean_title(k.text.strip(' [pdf]')):v.attrs['href']for k, v in zip(content.find_all('li'), content.find_all('a'))} for content in contents]
         
     return dict(zip(paths, contents))
         
