@@ -14,3 +14,6 @@
 
 ## GANs
 * ViTGAN: Training GANs with Vision Transformers [[pdf]](https://arxiv.org/pdf/2107.04589.pdf)
+
+## Super Resolution
+* Learning Texture Transformer Network for Image Super-Resolution [[pdf]](https://arxiv.org/pdf/2006.04139v2.pdf)
